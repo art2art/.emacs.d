@@ -1,0 +1,14 @@
+image-dired/
+elpa/
+el-get/
+semanticdb/
+auto-save-list/
+tutorial/
+eshell/
+other-projects/
+
+srecode-map.el
+custom.el
+ede-projects.el
+tramp
+*.elc
