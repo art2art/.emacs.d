@@ -4,9 +4,6 @@
 (add-to-list 'default-frame-alist '(height . 40))
 (add-to-list 'default-frame-alist '(width . 170))
 
-;(color-theme-zenburn)
-;(color-theme-solarized-light)
-
 (setq auto-compression-mode t)
 (setq text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
 (setq user-full-name "Artem Artemiev")
@@ -15,13 +12,6 @@
 (setq longlines-show-hard-newlines t)
 (setq file-name-coding-system 'utf-8)
 (fset 'yes-or-no-p 'y-or-n-p)
-
-;; (load-library "time")
-;; (setq display-time-24hr-format t
-;;       display-time-mail-file t
-;;       display-time-form-list (list 'time 'load)
-;;       display-time-day-and-date t)
-;;(display-time)
 
 (blink-cursor-mode t)
 

@@ -1,6 +1,9 @@
+;; Artem Artemiev 
+;; .emacs
+
 (setq custom-file "~/.emacs.d/custom.el")
 
-(setenv "PATH" (concat "/home/artemiev/.cabal/bin:" (getenv "PATH")))
+;; (setenv "PATH" (concat "/home/artemiev/.cabal/bin:" (getenv "PATH")))
 (setenv "ERL_LIBS" (concat "/home/artemiev/coding/erlang" (getenv "ERL_LIBS")))
 (push "/home/artemiev/coding/erlang" exec-path)
 (push "/home/artemiev/.cabal/bin" exec-path)
@@ -32,22 +35,27 @@
                      color-theme
                      magit
                      cedet
-                     haskell-mode
                      ghc-mod
-                     ;;distel
+                     haskell-mode
                      js2-mode
                      auto-complete
                      cmake-mode
+                     go-mode
                      auto-complete-extension
                      yasnippet
                      emacs-jabber
-;                     powerline
                      color-theme-solarized
+                     color-theme-zenburn
+                     color-theme-zen-and-art
+                     color-theme-tangotango
+                     color-theme-desert
+                     color-theme-sanityinc
                      smex
                      paredit
                      tuareg-mode
                      clojure-mode
                      slime
+;                     distel
                      ))
 
 (el-get 'sync art/packages)
@@ -69,4 +77,5 @@
 (load "~/.emacs.d/rc/emacs-jabber.el")
 ;(load "~/.emacs.d/rc/emacs-modeline.el")
 (load "~/.emacs.d/rc/emacs-misc-things.el")
+(load "~/.emacs.d/rc/emacs-color-themes.el")
 

@@ -52,18 +52,18 @@
   "Connect to IRC."
   (interactive)
   (progn
-;; (erc-select :server "irc.int.ru" :port 6667 :nick "art2art")
+    (erc-select :server "irc.int.ru" :port 6667 :nick "art2art")
     (erc-select :server "irc.freenode.net" :port 6667 :nick "art2art")
-;; (erc-select :server "irc.fu-berlin.de" :port 6667 :nick "art2art")
   ))
 
 (defun erc-start-or-switch ()
   "Connect to ERC, or switch to last active buffer"
   (interactive)
   (if (get-buffer "irc.freenode.net:6667") ;; ERC already active?
-    (erc-track-switch-buffer 1) ;; yes: switch to last active
-    (when (y-or-n-p "Start ERC? ") ;; no: maybe start ERC
+    (erc-track-switch-buffer 1) 
+    (when (y-or-n-p "Start ERC? ") 
       (erc :server "irc.freenode.net" :port 6667 :nick "art2art" :full-name "Artem")
+      ;; (erc :server "irc.int.ru" :port 6667 :nick "art2art" :full-name "Artem")
       ;; (erc :server "irc.gimp.org" :port 6667 :nick "art2art" :full-name "Artem")
       )))
 
