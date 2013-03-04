@@ -23,12 +23,14 @@
 (add-hook 'prog-mode-hook 'art/common-prog-hook)
 
 ;; clean trailing whitespaces automatically
-(setq art/trailing-whitespace-modes '(haskell-mode lisp-mode scheme-mode erlang-mode))
+;;(setq art/trailing-whitespace-modes 
+;;      '(haskell-mode lisp-mode scheme-mode erlang-mode))
 
-(defun art/trailing-whitespace-hook ()
-  (when (member major-mode art/trailing-whitespace-modes)
-    (delete-trailing-whitespace)))
-(add-hook 'before-save-hook 'art/trailing-whitespace-hook)
+
+;; (defun art/trailing-whitespace-hook ()
+;;   (when (member major-mode art/trailing-whitespace-modes)
+;;     (delete-trailing-whitespace)))
+;; (add-hook 'before-save-hook 'art/trailing-whitespace-hook)
 
 ;; untabify some modes
 ;; (setq art/untabify-modes '(haskell-mode lisp-mode scheme-mode erlang-mode clojure-mode))

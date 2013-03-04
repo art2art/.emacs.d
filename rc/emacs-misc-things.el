@@ -4,14 +4,17 @@
 (add-to-list 'default-frame-alist '(height . 40))
 (add-to-list 'default-frame-alist '(width . 170))
 
-(setq auto-compression-mode t)
+;;(setq auto-compression-mode t)
 (setq text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
 (setq user-full-name "Artem Artemiev")
 
 (setq make-backup-files nil)
+(setq default-truncate-lines t)
 (setq longlines-show-hard-newlines t)
 (setq file-name-coding-system 'utf-8)
 (fset 'yes-or-no-p 'y-or-n-p)
+
+(global-set-key [f12] 'toggle-truncate-lines)
 
 (blink-cursor-mode t)
 

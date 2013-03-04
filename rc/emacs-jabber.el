@@ -12,6 +12,7 @@
         (progn
           (jabber-groupchat-join jc "erlang@conference.jabber.ru" "art2art")
           (jabber-groupchat-join jc "erlang-talks@conference.jabber.ru" "art2art")          
+          (jabber-groupchat-join jc "golang@conference.jabber.ru" "art2art")
 ;;          (jabber-groupchat-join jc "haskell@conference.jabber.ru" "art2art")
 ;;          (jabber-groupchat-join jc "comp.lang.c@conference.jabber.ru" "art2art")
 ;;          (jabber-groupchat-join jc "icfpc@conference.jabber.ru" "art2art")

@@ -12,3 +12,6 @@ custom.el
 ede-projects.el
 tramp
 *.elc
+bookmarks
+.emacs.desktop
+

@@ -8,9 +8,9 @@
 (push "/home/artemiev/coding/erlang" exec-path)
 (push "/home/artemiev/.cabal/bin" exec-path)
 
-(load "~/.emacs.d/rc/emacs-common-hooks.el")
-(load "~/.emacs.d/rc/emacs-flymake.el")
-(load "~/.emacs.d/rc/emacs-erlang.el")
+;(load "~/.emacs.d/rc/emacs-common-hooks.el")
+;(load "~/.emacs.d/rc/emacs-flymake.el")
+;(load "~/.emacs.d/rc/emacs-erlang.el")
 
 (add-to-list 'load-path "/home/artemiev/.emacs.d/el-get/el-get/")
 (add-to-list 'load-path "/home/artemiev/.emacs.d/el-get/")
@@ -31,9 +31,9 @@
 			     auto-complete-emacs-lisp auto-complete-etags
 			     auto-complete-latex auto-complete-yasnippet))
 
-(setq art/packages '(psvn 
+(setq art/packages '(magit 
                      color-theme
-                     magit
+                     psvn
                      cedet
                      ghc-mod
                      haskell-mode
@@ -46,10 +46,10 @@
                      emacs-jabber
                      color-theme-solarized
                      color-theme-zenburn
-                     color-theme-zen-and-art
-                     color-theme-tangotango
-                     color-theme-desert
-                     color-theme-sanityinc
+                     ;color-theme-zen-and-art
+                     ;color-theme-tangotango
+                     ;color-theme-desert
+                     ;color-theme-sanityinc
                      smex
                      paredit
                      tuareg-mode
